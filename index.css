@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /* background: linear-gradient(#7E30E1, rgba(0, 0, 0, 0) 99%); */
+    background-color: #7E30E1;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    font-family: 'Open sans';
+    font-size: 15px;
+    font-weight: 500;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+header .navlink {
+    color: white;
+    text-decoration: none;
+}
+
+header .navlink:hover {
+    text-decoration: underline;
+}
+
+header .signin {
+    background-color: #E26EE5;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+
+header .signin:hover{
+    background-color: white;
+    color: #E26EE5;
+    outline: 1px solid #E26EE5;
+}
+
+header .left , header .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .left .logo {
+    height: 150px;
+    transform: translateY(26px);
+}
+
+main .main {
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+main .main .jumbo {
+    width: 100%;
+    background-image: url(main2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 400px;
+    h1 {
+        font-size: 90px;
+        font-family: 'Bebas Neue', monospace;
+    }
+    h2 {
+        font-size: 30px;
+        transform: translateY(-10px);
+    }
+}
+
+main .main .aboutus {
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #eec8ef; */
+    padding: 40px;
+    h3 {
+        font-family: 'Open sans';
+        font-size: 40px;
+    }
+    p {
+        margin-top: 20px;
+        font-family: monospace;
+        font-size: 18px;
+    }
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.revcard {
+    width: 95%;
+    background-color: #e2cbf5;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.lrev, .rrev {
+    display: flex;
+    align-items: center;
+    font-family: 'Open sans';
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    img {
+        border-radius: 20px;
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+}
+
+#feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    .row {
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 15px;
+        .card {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #dbe9ff;
+        }
+    }
+}

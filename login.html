@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Orian</title>
+    <style>
+        main {
+            background-color: #F3F8FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+            padding: 60px;
+            border-radius: 40px;
+            background-color: #49108B;
+        }
+        .logininput {
+            padding: 8px 20px;
+            border-radius: 25px;
+            border: none;
+        }
+        .loginbtn {
+            padding: 10px 30px;
+            border-radius: 25px;
+            border: none;
+            background-color: #7E30E1;
+            color: white;
+            font-size: 15px;
+        }
+        .loginbtn:hover {
+            background-color: white;
+            outline: 2px solid #ab98c5;
+            color: #7E30E1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <a href="index.html" style="font-size: 12px; text-decoration: none; color: white; padding: 5px 10px; background-color: #000000; border-radius: 25px;">HOME</a>
+            <img src="logo.png" alt="avatar" style="border-radius: 50%; width: 150px; height: 150px;">
+            <input type="text" class="logininput" placeholder="Enter Username!">
+            <input type="text" class="logininput" placeholder="Enter Password">
+            <button class="loginbtn">Submit</button>
+        </div>
+    </main>
+</body>
+</html>

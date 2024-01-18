@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /* background: linear-gradient(#7E30E1, rgba(0, 0, 0, 0) 99%); */
+    background-color: #7E30E1;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    font-family: 'Open sans';
+    font-size: 15px;
+    font-weight: 500;
+    position: sticky;
+    width: 100%;
+    z-index: 100;
+}
+
+header .navlink {
+    color: white;
+    text-decoration: none;
+}
+
+header .navlink:hover {
+    text-decoration: underline;
+}
+
+header .signin {
+    background-color: #E26EE5;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+
+header .signin:hover{
+    background-color: white;
+    color: #E26EE5;
+    outline: 1px solid #E26EE5;
+}
+
+header .left , header .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .left .logo {
+    height: 70px;
+}
+
+.row {
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+        font-family: sans-serif;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #e8b9ea;
+        border-radius: 15px;
+        margin: 15px;
+        gap: 12px;
+        img {
+            border-radius: 10px;
+            width: 99%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    .card:hover {
+        scale: 1.025;
+        transition: all 250ms ease-in;
+    }
+}
